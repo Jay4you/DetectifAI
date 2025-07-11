@@ -1,3 +1,6 @@
+<img width="1919" height="906" alt="image" src="https://github.com/user-attachments/assets/42ebf942-ec96-43d3-91af-35bd9fe496dd" />
+
+
 # DetectifAI
 
 DetectifAI is an AI-powered tool that helps identify phishing, smishing, and safe messages. It is trained specifically on Nigerian-style scam messages, including common SMS and email-based fraud.
@@ -36,17 +39,17 @@ These features are planned for future development:
 
 ## Project Structure
 
-`DetectifAI/
-├── app.py # Streamlit user interface
-├── train_model.py # Model training script
-├── generate_dataset.py # Dataset creation script
-├── requirements.txt # Python dependencies
-├── data/
-│ └── scam_dataset.csv # Sample labeled messages
-├── model/
-│ └── scam_model.pkl # Trained model file
-└── venv/ # Python virtual environment
-`
+    DetectifAI/
+    ├── app.py # Streamlit user interface
+    ├── train_model.py # Model training script
+    ├── generate_dataset.py # Dataset creation script
+    ├── requirements.txt # Python dependencies
+    ├── data/
+    │ └── scam_dataset.csv # Sample labeled messages
+    ├── model/
+    │ └── scam_model.pkl # Trained model file
+    └── venv/ # Python virtual environment
+
 
 ---
 
@@ -54,42 +57,37 @@ These features are planned for future development:
 
 To run DetectifAI locally:
 
-#### 1. Clone the repository
-```bash
-git clone https://github.com/Jay4you/DetectifAI.git
-cd DetectifAI
+### 1. Clone the repository
+    git clone https://github.com/Jay4you/DetectifAI.git
+    cd DetectifAI
 
 ### 2. Set up a virtual environment
-```bash
-python3 -m venv venv
-source venv/bin/activate
+    python3 -m venv venv
+    source venv/bin/activate
 
 ### 3. Install dependencies
-```bash
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 ### 4. Run the app
-```bash
-streamlit run app.py
+    streamlit run app.py
 
 Then open the URL shown in your terminal (typically http://localhost:8501) in your browser.
 
-Sample Messages
-`Safe:
+## Sample Messages
+- Safe:
 Your Airtime Recharge of N500 was successful.
 
-Phishing:
-UBA: We noticed suspicious activity. Please confirm your identity: uba-ng.com/verify
+- Phishing:
+-- UBA: We noticed suspicious activity. Please confirm your identity: uba-ng.com/verify
+-- Apple ID suspended. Click to reactivate now: apple.com.fake.ng
 
-Apple ID suspended. Click to reactivate now: apple.com.fake.ng
+- Smishing:
+-- Your NIN has been blocked. Click here to update: http://bit.ly/nin-update
+-- You won N2,000,000 in the Dangote Promo! Send your account details.
 
-Smishing:
-Your NIN has been blocked. Click here to update: http://bit.ly/nin-update
-
-You won N2,000,000 in the Dangote Promo! Send your account details.
-`
-Why This Matters
-Scam messages in Nigeria are becoming increasingly sophisticated. Common tactics include:
+## Why This Matters
+Scam messages in Nigeria are becoming increasingly sophisticated.
+Common tactics include:
 
 - Fake BVN/NIN update links
 - SMS from spoofed telecoms or banks
@@ -98,10 +96,10 @@ Scam messages in Nigeria are becoming increasingly sophisticated. Common tactics
 
 DetectifAI is trained on examples of these scams to help users identify and avoid them.
 
-Deployment
+## Deployment
 The project is being prepared for hosting on Streamlit Cloud. Once deployed, users will be able to access it from a browser without installing anything locally.
 
-Contributions
+## Contributions
 Contributions are welcome. You can contribute by:
 
 - Suggesting or adding real-world scam message examples
@@ -109,10 +107,10 @@ Contributions are welcome. You can contribute by:
 - Enhancing the user interface or backend
 - Reporting bugs or submitting feature requests
 
-License
+## License
 This project is licensed under the MIT License.
 
-Technologies Used
+## Technologies Used
 Python
 scikit-learn
 pandas
