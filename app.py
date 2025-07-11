@@ -43,22 +43,19 @@ feedback_url = "https://forms.office.com/r/aytV3uYWwZ?origin=lprLink"
 # Button that immediately opens the form
 st.markdown(
     f"""
-    <script>
-        function openForm() {{
-            window.open("{feedback_url}", "_blank");
-        }}
-    </script>
-    <button onclick="openForm()" style="
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px 20px;
-        font-size: 16px;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-    ">
-        Leave Feedback
-    </button>
+    <a href="{feedback_url}" target="_blank">
+        <button style="
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        ">
+            Leave Feedback
+        </button>
+    </a>
     """,
     unsafe_allow_html=True
 )
