@@ -23,4 +23,4 @@ model.fit(X, y)
 # Save the trained model
 joblib.dump(model, "model/scam_model.pkl")
 
-print("✅ Model trained and saved to model/scam_model.pkl")
+print("Model trained and saved to model/scam_model.pkl")
