@@ -1,7 +1,6 @@
-import streamlit as st
-import pandas as pd
-import joblib
 import os
+import streamlit as st
+import joblib
 
 # Load model
 model_path = "model/scam_model.pkl"
